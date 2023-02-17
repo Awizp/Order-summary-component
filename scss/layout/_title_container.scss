@@ -1,0 +1,13 @@
+@use "../util" as u;
+
+.title_container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-basis: 0;
+    padding: u.rem(10);
+
+    & p {
+        color: var(--green-dark-color);
+    }
+}

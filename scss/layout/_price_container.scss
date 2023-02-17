@@ -1,0 +1,63 @@
+@use "../util" as u;
+
+.price_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    background-color: hsla(0, 0%, 54%, 0.3);
+    width: 90%;
+    min-height: 15%;
+    border-radius: 10px;
+
+    & a {
+        text-align: center;
+        text-decoration: underline;
+        color: var(--teal-darker-color);
+
+        @include u.breakpoint-down(large){
+            font-size: u.rem(14);
+        }
+    }
+}
+
+.svg_container {
+    width: u.rem(50);
+    height: u.rem(50);
+    margin-inline: auto;
+    background-color: hsla(0, 1%, 45%, 0.3);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include u.breakpoint-down(large){
+        width: u.rem(40);
+        height: u.rem(40);
+    }
+}
+
+.controller_svg {
+    width: u.rem(30);
+    height: u.rem(30);
+    opacity: 0.8;
+
+    @include u.breakpoint-down(large){
+        width: u.rem(20);
+        height: u.rem(20);
+    }
+}
+
+.plan_container {
+    display: flex;
+    flex-direction: column;
+    gap: u.rem(5);
+    flex-basis: 0;
+    text-align: center;
+    align-items: center;
+
+    & p {
+        margin: auto;
+        color: var(--green-darker-color);
+    }
+}

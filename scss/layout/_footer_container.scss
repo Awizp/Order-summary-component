@@ -1,0 +1,16 @@
+@use "../util" as u;
+
+.footer_container {
+    position: absolute;
+    bottom: u.rem(12);
+}
+
+.attribution { 
+    font-size: u.rem(13); 
+    text-align: center;
+    color: var(--white-color); 
+}
+
+.attribution a { 
+    color: var(--green-dark-color); 
+}
